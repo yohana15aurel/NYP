@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="UTF-8">
+  <title>NYP - Homepage</title>
+  <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel/owl.theme.default.min.css">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-home navbar-default navbar-side navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button data-toggle="collapse-side" data-target=".side-collapse" type="button" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar-home"></span>
+          <span class="icon-bar-home"></span>
+          <span class="icon-bar-home"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/NYP-Logo-white.png" class="logo_stud logo-home-white" alt="logoNYP">
+
+        </a>
+      </div>
+      <div class="navbar-default side-collapse open">
+        <span class="icon-clear" id="close"></span>
+        <div class="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a class="hover-1-home" href="index.html">JOINING NYP</a>
+            </li>
+            <li>
+              <a class="hover-1-home" href="events.html">PARENT</a>
+            </li>
+            <li>
+              <a class="hover-1-home" id="project-show" href="#">MEDIA</a>
+            </li>
+            <li>
+              <a class="hover-1-home" href="aboutUs.html">INDUSTRY & PARTNER</a>
+            </li>
+            <li>
+              <a class="hover-1-home" id="virtual-show" href="#">ALUMNI</a>
+            </li>
+            <li>
+              <a class="hover-1-home" id="virtual-show" href="#">MY NYP</a>
+            </li>
+            <li>
+              <a class="hover-1-home" href="#">
+                <span class="icon-linkedin-brands"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row navbar-bottom">
+          <div class="navbar-multiline">
+            <div class="navbar-collapse">
+              <ul class="nav navbar-nav navbar-bottom">
+                <li>
+                  <a class="hover-2-home" href="#">COURSES & SCHOOLS</a>
+                </li>
+                <li>
+                  <a class="hover-2-home" href="#">ADMISSIONS</a>
+                </li>
+                <li>
+                  <a class="hover-2-home" href="#">ABOUT NYP</a>
+                </li>
+                <li>
+                  <a class="hover-2-home" href="#">FIND US</a>
+                </li>
+                <li class="dropdown mega-dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                  </a>
+                  <ul class="dropdown-menu mega-dropdown-menu row">
+                    <li class="col-sm-6">
+                      <a href="#">Full-Time Diploma</a>
+                      <a href="#">Part Time and Continuing</a>
+                      <a href="#">Education Courses</a>
+                    </li>
+                    <li class="col-sm-6">
+                      <a href="#">School of Engineering</a>
+                      <a href="#">School of Information Technology</a>
+                      <a href="#">School of Design</a>
+                      <a href="#">School of Business Management</a>
+                      <a href="#">School of Health Science</a>
+                      <a href="#">School of Chemical & Life Science</a>
+                      <a href="#">School of Interactive & Digital Media</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- home-banner -->
+  <div class="home-banner">
+    <div class="home_search_tab">
+      <div class="search__section">
+        <form class="search-container">
+          <div class="search-text">
+            <input type="text" id="search-bar" placeholder="How can we help you ?">
+          </div>
+          <div class="search-icon">
+            <a href="#">
+              <span class="icon-search"></span>
+            </a>
+          </div>
+        </form>
+      </div>
+
+      <!-- tab menu -->
+      <div class="tab_home__section">
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+          <!-- modal find a course -->
+          <button type="button" class="btn btn-default btn-lg" id="btn-1" data-tab="tab_1_course">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="assets/images/tab_1.png" alt="">
+
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <p>Find a</p>
+                <p>Course</p>
+              </div>
+            </div>
+          </button>
+          <!-- modal what course eligible -->
+          <button class="btn btn-default btn-lg" id="btn-2" data-tab="tab_2_course">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="assets/images/tab_2.png" alt="">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <p>What Course are</p>
+                <p> you eligible for?</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- modal what course enrollment -->
+          <button class="btn btn-default btn-lg" id="btn-3" data-tab="tab_3_course">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="assets/images/tab_3.png" alt="">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <p>Course</p>
+                <p> enrollment</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- modal what scholarship -->
+          <button class="btn btn-default btn-lg" id="btn-4" data-tab="tab_4_course">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="assets/images/tab_4.png" alt="">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <p>Apply NYP</p>
+                <p> scholarship</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- modal what course a-z -->
+          <button class="btn btn-default btn-lg" id="btn-5" data-tab="tab_5_course">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="assets/images/tab_5.png" alt="">
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-9">
+                <p>Courses</p>
+                <p>A - Z</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="findCourse" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-tabs" id="tab_1">
+                    <li class="active">
+                      <a data-toggle="tab" href="#tab_1_course">
+                        <img src="assets/images/tab_1.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#tab_2_course">
+                        <img src="assets/images/tab_2.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#tab_3_course">
+                        <img src="assets/images/tab_3.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#tab_4_course">
+                        <img src="assets/images/tab_4.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#tab_5_course">
+                        <img src="assets/images/tab_5.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="tab_1_course" class="tab-pane fade in active">
+                      <h3>Find a Course</h3>
+                      <form action="/action_page.php" method="get" id="form_course" name="form_course">
+                        <input type="text" id="course" name="course" placeholder="Search by courses or programmes ..." required>
+                        <span>or</span>
+                        <div class="select_level">
+                          <select id="level" required>
+                            <option value="" disabled selected>Level</option>
+                            <option value="one">one</option>
+                            <option value="two">two</option>
+                            <option value="three">three</option>
+                            <option value="four">four</option>
+                          </select>
+                          <span>or</span>
+                        </div>
+                        <div class="select_course_time">
+                          <select id="course_time" required>
+                            <option value="full-time">Full Time Course</option>
+                            <option value="part-time">Part Time Course</option>
+                            <option value="three">three</option>
+                            <option value="four">four</option>
+                          </select>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="group_button">
+                          <span>
+                            <a href="#">View All ></a>
+                          </span>
+                          <!-- <button class="btn btn-default btn-next" type="button" aria-controls="step-2">Next</button> -->
+                          <button type="submit" class="btn-go" form="form_course" value="submit">GO</button>
+                        </div>
+
+
+                      </form>
+                    </div>
+                    <div id="tab_2_course" class="tab-pane fade">
+                      <h3>What course are you eligible for you?</h3>
+                      <form action="/action_page.php" method="get" id="form_eligible">
+                        <div class="select_course">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <select id="course" required>
+                                <option value="english" selected>English</option>
+                                <option value="math">Math</option>
+                                <option value="sciences">Sciences</option>
+                                <option value="humanities">Humanities</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <div class="slidecontainer">
+                                <span>1
+                                  <input type="range" min="1" max="100" value="50">9</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="select_course">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <select id="course" required>
+                                <option value="english">English</option>
+                                <option value="math" selected>Math</option>
+                                <option value="sciences">Sciences</option>
+                                <option value="humanities">Humanities</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <div class="slidecontainer">
+                                <span>1
+                                  <input type="range" min="1" max="100" value="50">9</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="select_course">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <select id="course" required>
+                                <option value="english">English</option>
+                                <option value="math">Math</option>
+                                <option value="sciences" selected>Sciences</option>
+                                <option value="humanities">Humanities</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <div class="slidecontainer">
+                                <span>1
+                                  <input type="range" min="1" max="100" value="50">9</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="select_course">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <select id="course" required>
+                                <option value="english">English</option>
+                                <option value="math">Math</option>
+                                <option value="sciences">Sciences</option>
+                                <option value="humanities" selected>Humanities</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <div class="slidecontainer">
+                                <span>1
+                                  <input type="range" min="1" max="100" value="50">9</span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <br>
+                        <br>
+                        <!-- <a class="btn btn-primary continue">Continue</a> -->
+                        <button type="submit" value="submit" class="next">Next &#8250;</button>
+                      </form>
+                    </div>
+                    <div id="tab_3_course" class="tab-pane fade">
+                      <h3>Course Enrollment</h3>
+                      <p>Parents Information</p>
+                      <div class="parent-information__section">
+                        <form action="/action_page.php" method="get" id="form_parent_information" name="form_parent_information">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <input type="text" id="parent_name" name="parent_name" placeholder="Name*" required>
+                              <input type="text" id="passport" name="passport" placeholder="NRIC/BC/Passport Number*" required>
+                              <input type="text" id="nationality" name="nationality" placeholder="Nationality*" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <div class="select-gender">
+                                <select id="gender" required>
+                                  <option value="" disabled selected>Gender*</option>
+                                  <option value="men">Men</option>
+                                  <option value="women">Women</option>
+                                </select>
+                              </div>
+                              <input type="text" id="contact" name="contact" placeholder="Contact*" required>
+                              <input type="text" id="email" name="email" placeholder="Email*" required>
+                            </div>
+                          </div>
+                          <button type="submit" value="submit" class="next">Next &#8250;</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div id="tab_4_course" class="tab-pane fade">
+                      <h3>Apply NYP Scholarship</h3>
+                      <div class="scholarship__section">
+                        <form action="/action_page.php" method="get" id="form_scholarship" name="form_scholarship">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <input type="text" id="passport_number" name="passport_number" placeholder="NRIC/Passport Number*" required>
+                              <input type="text" id="name_apply" name="name_apply" placeholder="Name*" required>
+                              <div class="select-nationality">
+                                <select id="nationality" required>
+                                  <option value="" disabled selected>Nationality*</option>
+                                  <option value="indonesia">Indonesia</option>
+                                  <option value="england">England</option>
+                                  <option value="american">America</option>
+                                  <option value="korean">Korean</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                              <input type="text" id="slip_number" name="slip_number" placeholder=" Declaration Slip No*" required>
+                              <input type="text" id="contact" name="contact" placeholder="Contact*" required>
+                              <input type="text" id="email" name="email" placeholder="Email*" required>
+                            </div>
+                          </div>
+                          <button type="submit" value="submit" class="next">Next &#8250;</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div id="tab_5_course" class="tab-pane fade">
+                      <h3>Courses A - Z</h3>
+                      <div class="search-button">
+                        <div class="search-button-container">
+                          <form action="/action_page.php">
+                            <span>
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                              </button>or</span>
+                          </form>
+                        </div>
+                      </div>
+                      <p>Show Items Starting With:</p>
+                      <form class="boxed" action="/action_page.php" method="get" id="form_course_a-z" name="form_course_a-z">
+                        <input type="radio" id="star" name="abjad" value="star">
+                        <label for="star">*</label>
+                        <input type="radio" id="a" name="abjad" value="A">
+                        <label for="a">A</label>
+                        <input type="radio" id="b" name="abjad" value="B">
+                        <label for="b">B</label>
+                        <input type="radio" id="c" name="abjad" value="C">
+                        <label for="c">C</label>
+                        <input type="radio" id="d" name="abjad" value="D">
+                        <label for="d">D</label>
+                        <input type="radio" id="e" name="abjad" value="E">
+                        <label for="e">E</label>
+                        <input type="radio" id="f" name="abjad" value="F">
+                        <label for="f">F</label>
+                        <input type="radio" id="g" name="abjad" value="G">
+                        <label for="g">G</label>
+                        <input type="radio" id="h" name="abjad" value="H">
+                        <label for="h">H</label>
+                        <input type="radio" id="i" name="abjad" value="I">
+                        <label for="i">I</label>
+                        <input type="radio" id="j" name="abjad" value="J">
+                        <label for="j">J</label>
+                        <input type="radio" id="k" name="abjad" value="K">
+                        <label for="k">K</label>
+                        <input type="radio" id="l" name="abjad" value="L">
+                        <label for="l">L</label>
+                        <input type="radio" id="m" name="abjad" value="M">
+                        <label for="m">M</label>
+                        <br>
+                        <input type="radio" id="n" name="abjad" value="N">
+                        <label for="n">N</label>
+                        <input type="radio" id="o" name="abjad" value="O">
+                        <label for="o">O</label>
+                        <input type="radio" id="p" name="abjad" value="P">
+                        <label for="p">P</label>
+                        <input type="radio" id="q" name="abjad" value="Q">
+                        <label for="q">Q</label>
+                        <input type="radio" id="r" name="abjad" value="R">
+                        <label for="r">R</label>
+                        <input type="radio" id="s" name="abjad" value="S">
+                        <label for="s">S</label>
+                        <input type="radio" id="t" name="abjad" value="T">
+                        <label for="t">T</label>
+                        <input type="radio" id="u" name="abjad" value="U">
+                        <label for="u">U</label>
+                        <input type="radio" id="v" name="abjad" value="V">
+                        <label for="v">V</label>
+                        <input type="radio" id="w" name="abjad" value="W">
+                        <label for="w">W</label>
+                        <input type="radio" id="x" name="abjad" value="X">
+                        <label for="x">X</label>
+                        <input type="radio" id="y" name="abjad" value="Y">
+                        <label for="y">Y</label>
+                        <input type="radio" id="z" name="abjad" value="Z">
+                        <label for="z">Z</label>
+                        <br>
+                        <br>
+                        <div class="group_button">
+                          <span>
+                            <a href="#">View All ></a>
+                          </span>
+                          <!-- <button class="btn btn-default btn-next" type="button" aria-controls="step-2">Next</button> -->
+                          <button type="submit" class="btn-go" form="form_course" value="submit">GO</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- home content -->
+  <div class="home-content__section padding-content">
+    <h2>WHAT'S HAPPENING @ NYP</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Nav tabs -->
+          <div class="card">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#feature-tab" aria-controls="home" role="tab" data-toggle="tab">
+                  <span>FEATURED</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#news-tab" aria-controls="profile" role="tab" data-toggle="tab">
+                  <span>NEWS & EVENTS</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                  <span>PUBLICATION</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#classroom" aria-controls="classroom" role="tab" data-toggle="tab">
+                  <span>BEYOND CLASSROOM</span>
+                </a>
+              </li>
+              <div class="btn-group">
+                <a href="#" id="grid" class="btn btn-default btn-sm">
+                  <span class="glyphicon glyphicon-th active"></span>
+                </a>
+                <a href="#" id="list" class="btn btn-default btn-sm">
+                  <span class="glyphicon glyphicon-th-list">
+                  </span>
+                </a>
+
+              </div>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="feature-tab">
+          <div class="container">
+            <div id="feature" class="row list-group">
+              <div class="item  col-xs-3 col-lg-3">
+                <div class="images_content_1">
+                  <img src="assets/images/news1.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_2">
+                  <img src="assets/images/news2.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p> Interactive & Digital Media</p>
+                  <p>Then there were the three out of five animations that were selected to represent Singapore at the 15th
+                    TBS...
+                  </p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_3">
+                  <img src="assets/images/news3.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_4">
+                  <img src="assets/images/news4.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="news-tab">
+          <div class="container">
+            <div id="news_event" class="row list-group">
+              <div class="item  col-xs-3 col-lg-3">
+                <div class="images_content_1">
+                  <img src="assets/images/news1.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_2">
+                  <img src="assets/images/news2.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p> Interactive & Digital Media</p>
+                  <p>Then there were the three out of five animations that were selected to represent Singapore at the 15th
+                    TBS...
+                  </p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_3">
+                  <img src="assets/images/news3.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_4">
+                  <img src="assets/images/news4.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="messages">
+          <div class="container">
+            <div id="messages" class="row list-group">
+              <div class="item  col-xs-3 col-lg-3">
+                <div class="images_content_1">
+                  <img src="assets/images/news1.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_2">
+                  <img src="assets/images/news2.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p> Interactive & Digital Media</p>
+                  <p>Then there were the three out of five animations that were selected to represent Singapore at the 15th
+                    TBS...
+                  </p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_3">
+                  <img src="assets/images/news3.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_4">
+                  <img src="assets/images/news4.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="classroom">
+          <div class="container">
+            <div id="classroom" class="row list-group">
+              <div class="item  col-xs-3 col-lg-3">
+                <div class="images_content_1">
+                  <img src="assets/images/news1.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_2">
+                  <img src="assets/images/news2.jpg" alt="news">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p> Interactive & Digital Media</p>
+                  <p>Then there were the three out of five animations that were selected to represent Singapore at the 15th
+                    TBS...
+                  </p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_3">
+                  <img src="assets/images/news3.jpg" alt="">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+              <div class="item  col-xs-3 col-md-3 col-lg-3">
+                <div class="images_content_4">
+                  <img src="assets/images/news4.jpg" alt="">
+                </div>
+                <div class="image_description">
+                  <h3>23 May 2015</h3>
+                  <p>NYP Wins 6 Awards at Tan Kah Kee Young Inventors' Award 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tab panes -->
+  </div>
+
+  <!-- social media -->
+  <div class="home-social__banner">
+    <div class="images-footer">
+      <img src="assets/images/SC.png" alt="">
+
+    </div>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="row footer_content">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer_content_column">
+        <h2>
+          <a href="#">HOME</a>
+        </h2>
+        <h2>
+          <a href="#">ABOUT NYP</a>
+        </h2>
+        <a href="#">Mission</a>
+        <a href="#">Board of Trustees</a>
+        <a href="#">Director</a>
+        <a href="#">Deputy Director</a>
+        <a href="#">Research</a>
+        <a href="#">Key Non-Financial and Financial Information</a>
+        <a href="#">Annual Report</a>
+        <h2>
+          <a href="#">SCHOOL</a>
+        </h2>
+        <a href="#">School of Engineering</a>
+        <a href="#">School of Information Technology</a>
+        <a href="#">School of Design</a>
+        <a href="#">School of Business Management</a>
+        <a href="#">School of Health Sciences</a>
+        <a href="#">School of Chemical & Life Sciences</a>
+        <a href="#">School of Interactive & Digital Media</a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer_content_column">
+        <h2>
+          <a href="#">COURSES</a>
+        </h2>
+        <a href="#">Full-Time Diploma</a>
+        <a href="#">Part-time and Continuing</a>
+        <a href="#">Education Courses</a>
+        <h2>
+          <a href="#">CONTINUING EDUCATION</a>
+        </h2>
+        <a href="#">Professional Development Centre</a>
+        <a href="#">Singapore Institute of Retail Studies (SIRS)</a>
+        <a href="#">The Asian Culinary Institute (ACI) of Singapore</a>
+        <h2>
+          <a href="#">INDUSTRY SERVICE</a>
+        </h2>
+        <a href="#">Professional Engineering</a>
+        <a href="#">Information Technology</a>
+        <a href="#">Design</a>
+        <a href="#">Business Management</a>
+        <a href="#">Interactive & Digital Media</a>
+        <a href="#">Industry Communities</a>
+        <a href="#">Technology Innovation & Commercialisation</a>
+        <a href="#">Industry Schemes</a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer_content_column">
+        <img src="assets/images/NYP-Logo-white.png" alt="NYP Logo White">
+        <img src="assets/images/map.jpg" alt="NYP Map">
+        <p>Nanyang Polytechnic, 180 Ang Mo Kio Avenue 8 Singapore 569830</p>
+        <div class="subscribe">
+          <h2 class="subscribe_title">SUBSCRIBE NOW!</h2>
+          <input class="subscribe_input" type="text">
+          <button class="subscribe_button">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!--[if lte IE 9]><script src="assets/plugins/jquery/jquery-1.12.4.min.js"></script><![endif]-->
+  <!--[if !IE]> -->
+  <!-- Jquery needed -->
+  <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+
+  <!-- <![endif]-->
+  <script src="assets/plugins/OwlCarousel/owl.carousel.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/fx-utils.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
